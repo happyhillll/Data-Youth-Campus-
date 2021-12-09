@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=no">
+
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/ux.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div class="wrap">
+	<div class="header">
+        <div class="left">
+		</div>
+	</div>
+    <!-- ////////////////////////////////////////// content start//////////////////////////////////////////-->
+	<div class="content">
+        <script>
+            $('body').addClass('login-bg');
+        </script>
+		<!-- login-wrap -->
+        <div class="login-wrap">
+            <div class="login-visual">
+                <div class="img"><img src="../images/logo.png" alt=""></div>
+            </div>
+            <form id="loginfrm" class="login-form">
+                <ul class="login-input">
+                    <!--<li>
+            <input type="hidden" name="ACCESS" value="true">
+        </li> 다른 페이지 넘어올때 차단 code-->
+                    <li>
+                        <div class="input">
+                            <i class="ico i-user2"></i>
+                            <input type="text" placeholder="ID or E-Mail" name="id" value="" autocomplete="off">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input">
+                            <i class="ico i-lock"></i>
+                            <input type="password" placeholder="Password" name="pw" value="">
+                        </div>
+                    </li>
+                </ul>
+                <div class="login-menu">
+                    <a href="javascript:void(0);">아이디찾기</a>
+                    <span class="bar"></span>
+                    <a href="javascript:void(0);">비밀번호 찾기</a>
+                </div>
+                <div class="login-btn">
+                <div class="login-btn" onclick="location.href='비오는날파리어때.html'">
+                    <button type="button" class="btn-type3 c-type7 w100" id="btnlogin">로그인</button>
+                </div>
+                <div class="login-btn" onclick="location.href='join1.html'">
+                    <a href="javascript:void(0);" class="btn-type3 c-type7 w100">회원가입</a>
+                </div>
+                <div class="login-btn"></div>
+                <div class="img"><img src="../images/시나브로.png" width="50" height="50" alt="" style="margin-left:auto; margin-right:auto; margin-top:228px; display:block;"></div>
+            </form>
+						</script>
+        </div>
+        <!-- // login-wrap -->
+	</div>
+	<!-- ////////////////////////////////////////// container end //////////////////////////////////////////-->
+</div>
+<!-- // wrap -->
+
+</body>
+</html>

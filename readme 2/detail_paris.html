@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=no">
+
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/ux.js"></script>
+</head>
+
+<body>
+
+<!-- wrap -->
+<div class="wrap">
+	<div class="header" onclick="history.back()">
+		<div class="left">
+			<a href="javascript:void(0);" class="prev"><i class="ico i-prev"></i></a>
+		</div>
+		<div class="center">
+            <h1 class="pageTit2">정철이의 이야기</h1>
+		</div>
+		<div class="right"></div>
+	</div>
+	<!-- ////////////////////////////////////////// content start//////////////////////////////////////////-->
+	<div class="content">
+        <!-- product-detail-wrap -->
+		<div class="product-detail-wrap">
+            <!-- product-desc -->
+            <div class="product-desc">
+                <div class="img2" ; style="text-align : center; background-color:transaparent" ;>
+                    <!-- <span class="best">best</span> -->
+                    <span class="new">new</span>
+                    <img src="../images/개선문.jpeg" alt="">
+                </div>
+
+                <div class="desc">
+                    <div class="info">
+                        <div class="left">
+                            <b>프랑스 파리</br>
+                            <br>더 천천히 걷고, 오래 머물고 싶은 도시</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // product-desc -->
+            <div class="data-info-top">
+                <div class="left" onclick="toggleSlide(this, '[data-id=view-1]')"><b class="tit">키워드 확인/선택 하기</b>
+                    <span>선택된 키워드(최대 3개): </span><span id = 'check_key'> </span>
+
+                </div>
+                <div class="right">
+                    <a href="javascript:void(0);" class="btn-tog" onclick="toggleSlide(this, '[data-id=view-1]')"><i class="ico i-arr-t"></i></a>
+                </div>
+            </div>
+            <!-- prd-list2 -->
+            <div class="prd-list2" data-id="view-1" style="display: none;">
+                <div class="list-type2 type2 vt-st">
+                    <ul>
+                        <li>
+                            <div class="left min-w180"><span class="ft-m dot-st">여행명소</span></div>
+                            <div class="right" id = "landmark_list">
+                                <div class="ft-m c-gray">
+                                    <span class = 'keywords' id = 'landmark_0' onclick = 'click_keyword(00);'>#파리</span>
+                                    <span class = 'keywords' id = 'landmark_1' onclick = 'click_keyword(01);'>#에펠탑</span>
+                                    <span class = 'keywords' id = 'landmark_2' onclick = 'click_keyword(02);'>#루브르</span>
+                                    <span class = 'keywords' id = 'landmark_3' onclick = 'click_keyword(03);'>#노트르담</span>
+                                    <span class = 'keywords' id = 'landmark_4' onclick = 'click_keyword(04);'>#몽마르트</span>
+                                    <span class = 'keywords' id = 'landmark_5' onclick = 'click_keyword(05);'>#샹젤리제</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left min-w180"><span class="ft-m dot-st">음식</span></div>
+                            <div class="right" id = "food_list">
+                                <div class="ft-m c-gray">
+                                    <span class = 'keywords' id = 'food_0' onclick = 'click_keyword(10);'>#와인</span>
+                                    <span class = 'keywords' id = 'food_1' onclick = 'click_keyword(11);'>#그라탕</span>
+                                    <span class = 'keywords' id = 'food_2' onclick = 'click_keyword(12);'>#맥주</span>
+                                    <span class = 'keywords' id = 'food_3' onclick = 'click_keyword(13);'>#카페</span>
+                                    <span class = 'keywords' id = 'food_4' onclick = 'click_keyword(14);'>#마카롱</span>
+                                    <span class = 'keywords' id = 'food_5' onclick = 'click_keyword(15);'>#빵</span>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left min-w180"><span class="ft-m dot-st">테마</span></div>
+                            <div class="right" id = "theme_list">
+                                <span class="ft-m c-gray">
+                                    <span class = 'keywords' id = 'theme_0' onclick = 'click_keyword(20);'>#야경</span>
+                                    <span class = 'keywords' id = 'theme_1' onclick = 'click_keyword(21);'>#낭만</span>
+                                    <span class = 'keywords' id = 'theme_2' onclick = 'click_keyword(22);'>#음악</span>
+                                    <span class = 'keywords' id = 'theme_3' onclick = 'click_keyword(23);'>#예술</span>
+                                    <span class = 'keywords' id = 'theme_4' onclick = 'click_keyword(24);'>#박물관</span>
+                                    <span class = 'keywords' id = 'theme_5' onclick = 'click_keyword(25);'>#영화</span>
+
+                                    <!--#야경 #낭만 #음악 #예술 #박물관 #영화-->
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- // prd-list2 -->
+            <div class="btn-wrap" onclick="location.href='select_paris.html'">
+                <a href="javascript:void(0);" class="btn-type1 c-type6 w45">선택하기</a>
+            </div>
+        </div>
+        <!-- // product-detail-wrap -->
+	</div>
+	<!-- ////////////////////////////////////////// container end //////////////////////////////////////////-->
+
+
+		<!-- footer -->
+	<div class="footer">
+        <div class="inner">
+            <p class="flogo">방구석 여행담</p>
+            <p class="copyright">Copyright ⓒ 시나브로 ALL RIGHTS RESERVED. </p>
+        </div>
+    </div>
+			<!-- // footer -->
+
+</div>
+<!-- // wrap -->
+
+</body>
+</html>
+
+
+<script type = 'text/javascript'>
+    var paris = [['파리', '에펠탑' ,'루브르' ,'노트르담', '몽마르트','샹젤리제'],['와인', '그라탕','맥주','카페','마카롱','빵'],['야경', '낭만','음악','예술','박물관','영화']];
+    var keywords = [[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]];
+    var part = ['landmark','food','theme'];
+
+    function click_keyword(idx){
+       var i = Math.floor(idx / 10);
+       var j = idx % 10;
+       var id = part[i] + '_' + j;
+
+       if (keywords[i][j] == 0){
+          document.getElementById(id).style.color = '#ee5a46';
+          keywords[i][j] = 1;
+       }
+       else{
+          document.getElementById(id).style.color = '#959595';
+          keywords[i][j]= 0;
+      }
+      print_key();
+    }
+
+
+    function print_key(){
+        var print_string = ''
+        for (var i = 0 ; i < 3 ;i++){
+            for (var j = 0; j<keywords[i].length ; j++){
+                if(keywords[i][j] == 1){
+                    print_string += ('#' + paris[i][j] + '\t');
+                }
+            }
+        }
+        document.getElementById('check_key').innerText = print_string;
+    }
+
+
+
+
+</script>
